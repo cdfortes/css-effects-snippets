@@ -2,6 +2,7 @@
     <div class="box" v-clipboard:copy="css" @click="isCopied">
         <div :class="className">
             <slot></slot>
+            <slot name="innerHtml"></slot>
         </div>
     </div>
 </template>
@@ -37,11 +38,14 @@ export default {
 
 <style lang="scss" scoped>
 
-    .box {
-        min-height: 60px;
-        min-width: 30px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-    }
+.box {
+  min-height: 135px;
+  min-width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
 </style>

@@ -1,11 +1,13 @@
 .buttonLeft {
     height: 40px;
+    width: 120px;
     padding: 0 14px;
     overflow: hidden;
     background: #474E51;
     position: relative;
     line-height: 40px;
     color: #fff;
+    text-align: center;
 }
 
 .buttonLeft::before {
